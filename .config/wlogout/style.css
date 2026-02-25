@@ -1,0 +1,66 @@
+/* Genel Pencere Ayarı - Arkaplanı Hafif Karartır */
+window {
+    background-color: rgba(12, 12, 12, 0.8);
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+/* Butonların Genel Yapısı */
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    background-color: #1e1e2e; /* Koyu Gri Buton Rengi */
+    border: 3px solid #1e1e2e;
+    border-radius: 20px; /* Kenarları Yuvarlat */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: all 0.3s ease; /* Yumuşak Geçiş */
+    color: white;
+}
+
+/* Üzerine Gelince (Hover) Efekti */
+button:hover {
+    background-size: 35%; /* İkon Büyüsün */
+    border-radius: 50px; /* Tam Yuvarlak Olsun */
+    animation: gradient_f 20s ease-in infinite;
+}
+
+/* Her Butona Özel Renkler (Hover Halinde) */
+
+#lock:hover {
+    background-color: #f9e2af; /* Sarı */
+    color: #1e1e2e;
+}
+
+#logout:hover {
+    background-color: #a6e3a1; /* Yeşil */
+    color: #1e1e2e;
+}
+
+#suspend:hover {
+    background-color: #89b4fa; /* Mavi */
+    color: #1e1e2e;
+}
+
+#hibernate:hover {
+    background-color: #cba6f7; /* Mor */
+    color: #1e1e2e;
+}
+
+#shutdown:hover {
+    background-color: #f38ba8; /* Kırmızı */
+    color: #1e1e2e;
+}
+
+#reboot:hover {
+    background-color: #fab387; /* Turuncu */
+    color: #1e1e2e;
+}
+
+/* İkon Tanımlamaları */
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }
